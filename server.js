@@ -18,6 +18,8 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/deposit', require('./routes/deposit'));
 app.use('/api/swap', require('./routes/swap'));  // Add this line for the swap route
+app.use('/api/buy', require('./routes/buy'));  // Add this line for buy
+app.use('/api/sell', require('./routes/sell')); // Add this line for sell
 
 
 // Start the server
